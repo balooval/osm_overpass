@@ -1,0 +1,176 @@
+*{
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	background-color: #111;
+}
+
+#main{
+	
+}
+
+#header{
+	padding: 0 20px;
+	padding-top: 5px;
+	height: 45px;
+	background-color: #EEE;
+	color: #FFF;
+	font-size: 28px;
+	border-bottom: 1px solid #999;
+	
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#mainContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: 90%;
+}
+
+#console{
+	font-family: courier;
+	background-color: black;
+	color: #D0D0D0;
+	padding: 5px;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 200px;
+	display: none;
+}
+
+#console .error{
+	color: #FF0000;
+}
+
+#consoleHeader{
+	cursor: pointer;
+	text-align: right;
+}
+
+#consoleHeader:hover{
+	font-weight: bold;
+}
+
+#consoleReveal{
+	cursor: pointer;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	right: 0px;
+	margin-top: -48px;
+	display: block;
+}
+
+#mapTools{
+	border: 1px solid #AAA;
+	flex-grow: 2;
+	flex-shrink: 0;
+	flex-basis: 150px;
+	background-color: #CCC;
+}
+
+#mapContainer{
+	width: 800px;
+	flex-grow: 8;
+}
+
+.poiGroupeBox{
+	
+}
+
+.poiGroupeBox .poiGroupeCheckbox{
+	margin-right: 10px;
+}
+
+
+.poiGroupeBox .title{
+	border-top: 1px solid #AAA;
+	border-bottom: 1px solid #CCC;
+	background-color: #F5F5F5;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666;
+	padding: 10px 5px;
+}
+
+.poiSelectorElement{
+	
+}
+
+.poiSelectorElement input[type="checkbox"]{
+	display: none;
+}
+
+.poiSelectorElement .container{
+	cursor: pointer;
+	color: #666;
+	background-color: #EEE;
+	display: block;
+	padding: 5px;
+	padding-left: 30px;
+	border-bottom: 1px solid #CCC;
+	height: 30px;
+}
+
+.poiSelectorElement.addPoi .container{
+	cursor: auto;
+	background-color: #888;
+}
+
+
+.poiSelectorElement label.selected{
+	background-color: #FFF;
+	font-weight: bold;
+	color: #111;
+	background: linear-gradient( #f6a108, #fc7903 );
+}
+
+.poiSelectorElement label:hover{
+	background-color: #EEE;
+	background: linear-gradient( rgba( 246, 161, 8, 0.8 ), rgba( 252, 121, 3, 0.8 ) );
+}
+
+.poiSelectorElement label.selected:hover{
+	background-color: #EEE;
+	background: linear-gradient( rgba( 246, 161, 8, 0.6 ), rgba( 252, 121, 3, 0.6 ) );
+}
+
+.poiSelectorElement label img{
+	margin-bottom: -5px;
+}
+
+#icosList{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #BBB;
+	background-color: #FFF;
+	padding: 5px;
+	top: -130px;
+	left: -10px;
+	display: none;
+	margin: 0;
+	border-radius: 4px;
+	box-shadow: 5px 5px 5px rgba( 80, 80, 80, 0.5 );
+}
+
+#icosList img{
+	margin: 3px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+#icoPoiPreview:hover, #icosList img:hover{
+	background-color: #efa92f;
+	border-radius: 4px;
+}
+
+#icoPoiPreview, #imgAddQuery{
+	cursor: pointer;
+}
